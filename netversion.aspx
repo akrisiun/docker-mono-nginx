@@ -9,11 +9,17 @@
     Response.Write("<pre>");
     Response.Write("Docker commands:");
     Response.Write("<br/>docker build -t nginx-mono .");
-    Response.Write("<br/>docker run -it -p 8081:80 --name monoweb1 nginx-mono");
+    Response.Write("<br/>docker run -d -p 8081:80 --name monoweb1 nginx-mono");
     Response.Write("<br/>docker run --rm -it -p 8080:80 --name web2-rm nginx-mono");
     Response.Write(@"<br/>Source: <a 
         href=""https://github.com/seif/docker-mono-nginx""
         >https://github.com/seif/docker-mono-nginx</a>");
+    Response.Write(@", Fork: <a 
+        href=""https://github.com/akrisiun/docker-mono-nginx""
+        >https://github.com/akrisiun/docker-mono-nginx</a>"); 
+   Response.Write(@"<br/>Source 2: <a         
+        href=""https://github.com/shaunol/docker-nginx-aspnet""
+        >https://github.com/shaunol/docker-nginx-aspnet</a>");
     Response.Write(@"<br/>Mono fastcgi: <a         
         href=""http://www.mono-project.com/docs/web/fastcgi/nginx/""
         >http://www.mono-project.com/docs/web/fastcgi/nginx/</a>");

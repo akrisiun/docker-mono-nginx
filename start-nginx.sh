@@ -11,4 +11,5 @@ fi
 sed -i "s/<NGINX_PORT>/$NGINX_PORT/g" /etc/nginx/sites-available/default
 sed -i "s/<APP_PORT>/$APP_PORT/g" /etc/nginx/sites-available/default
 
-/usr/sbin/nginx -g "daemon off;"
+# /usr/sbin/nginx -g "daemon off;"
+/etc/init.d/nginx start
