@@ -19,4 +19,5 @@ ADD config/default /etc/nginx/sites-available/
 EXPOSE 80
 
 ENTRYPOINT ["/usr/local/bin/init.sh"]
-CMD ["echo", "No CMD specified, set a CMD to run in your Dockerfile"]
+// CMD ["echo", "Hello nginx"]
+CMD ["/usr/local/bin/init.sh", ""]
