@@ -1,2 +1,3 @@
 #!/bin/bash
-xsp4
+
+/usr/bin/xsp4 --loglevels=ALL &
